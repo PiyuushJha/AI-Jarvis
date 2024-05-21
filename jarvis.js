@@ -66,7 +66,12 @@ function takeCommand(message) {
         window.open('Calculator:///');
         const finalText = "Opening Calculator";
         speak(finalText);
-    } else {
+    }
+    else if (message.includes('whatsapp')) {
+        window.open('whatsapp:///');
+        const finalText = "Opening Calculator";
+        speak(finalText);
+    }else {
         window.open(`https://www.google.com/search?q=${message.replace(" ", "+")}`, "_blank");
         const finalText = "I found some information for " + message + " on Google";
         speak(finalText);
