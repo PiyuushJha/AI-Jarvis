@@ -41,6 +41,8 @@ function takeCommand(message) {
         speak("Hello Sir, I'm good,How May I Help You?");
     } else if (message.includes('who are you?') ) {
         speak("I'm jarvis an AI avatar created by piyush jha");
+    } else if (message.includes('do you know me') ) {
+        speak("yes, you are piyush and you have created me");
     }  else if (message.includes("open google")) {
         window.open("https://google.com", "_blank");
         speak("Opening Google...");
