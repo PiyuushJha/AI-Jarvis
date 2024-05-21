@@ -39,7 +39,7 @@ function takeCommand(message) {
         speak("Hello Sir, How May I Help You?");
     }else if (message.includes('how are you') ) {
         speak("Hello Sir, I'm good,How May I Help You?");
-    } else if (message.includes('who are you') ) {
+    } else if (message.includes('introduce yourself') ) {
         speak("I'm jarvis an AI avatar created by piyush jha");
     } else if (message.includes('do you know me') ) {
         speak("yes, you are piyush and you have created me");
