@@ -39,10 +39,13 @@ function takeCommand(message) {
         speak("Hello Sir, How May I Help You?");
     }else if (message.includes('how are you') ) {
         speak("Hello Sir, I'm good,How May I Help You?");
-    } else if (message.includes('who are you?') ) {
+    } else if (message.includes('who are you') ) {
         speak("I'm jarvis an AI avatar created by piyush jha");
     } else if (message.includes('do you know me') ) {
         speak("yes, you are piyush and you have created me");
+    }  else if (message.includes('open your source code')) {
+        window.open("https://github.com/PiyuushJha/AI-Jarvis");
+        speak("here is my source code....");
     }  else if (message.includes("open google")) {
         window.open("https://google.com", "_blank");
         speak("Opening Google...");
