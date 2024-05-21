@@ -71,7 +71,37 @@ function takeCommand(message) {
         window.open('whatsapp:///');
         const finalText = "Opening whatsapp";
         speak(finalText);
-    }else {
+    }
+        else if (message.includes('Instagram')) {
+        window.open('Instagram:///');
+        const finalText = "Opening Instagram";
+        speak(finalText);
+    }else if (message.includes('VS code')) {
+        window.open('visual Studio:///');
+        const finalText = "Opening visual studio";
+        speak(finalText);
+    }    else if (message.includes('Photos')) {
+        window.open('Photos:///');
+        const finalText = "Opening Photos";
+        speak(finalText);
+    }    else if (message.includes('Settings')) {
+        window.open('Settings:///');
+        const finalText = "Opening Settings";
+        speak(finalText);
+    }    else if (message.includes('Camera')) {
+        window.open('camera:///');
+        const finalText = "Opening camera";
+        speak(finalText);
+    }    else if (message.includes('Disney+')) {
+        window.open('Disney+:///');
+        const finalText = "Opening Disney+";
+        speak(finalText);
+    }    else if (message.includes('whatsapp')) {
+        window.open('whatsapp:///');
+        const finalText = "Opening whatsapp";
+        speak(finalText);
+    }
+    else {
         window.open(`https://www.google.com/search?q=${message.replace(" ", "+")}`, "_blank");
         const finalText = "I found some information for " + message + " on Google";
         speak(finalText);
