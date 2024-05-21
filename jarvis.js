@@ -37,7 +37,9 @@ btn.addEventListener('click', () => {
 function takeCommand(message) {
     if (message.includes('hey') || message.includes('hello')) {
         speak("Hello Sir, How May I Help You?");
-    } else if (message.includes("open google")) {
+    }else if (message.includes('how are you') ) {
+        speak("Hello Sir, I'm good,How May I Help You?");
+    }  else if (message.includes("open google")) {
         window.open("https://google.com", "_blank");
         speak("Opening Google...");
     } else if (message.includes("open youtube")) {
@@ -73,7 +75,7 @@ function takeCommand(message) {
         speak(finalText);
     }
         else if (message.includes('instagram')) {
-        window.open('Instagram:///');
+        window.open("https://www.instagram.com/");
         const finalText = "Opening Instagram";
         speak(finalText);
     }else if (message.includes('vs code')) {
