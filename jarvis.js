@@ -72,27 +72,27 @@ function takeCommand(message) {
         const finalText = "Opening whatsapp";
         speak(finalText);
     }
-        else if (message.includes('Instagram')) {
+        else if (message.includes('instagram')) {
         window.open('Instagram:///');
         const finalText = "Opening Instagram";
         speak(finalText);
-    }else if (message.includes('VS code')) {
+    }else if (message.includes('vs code')) {
         window.open('visual Studio:///');
         const finalText = "Opening visual studio";
         speak(finalText);
-    }    else if (message.includes('Photos')) {
+    }    else if (message.includes('photos')) {
         window.open('Photos:///');
         const finalText = "Opening Photos";
         speak(finalText);
-    }    else if (message.includes('Settings')) {
+    }    else if (message.includes('settings')) {
         window.open('Settings:///');
         const finalText = "Opening Settings";
         speak(finalText);
-    }    else if (message.includes('Camera')) {
+    }    else if (message.includes('camera')) {
         window.open('camera:///');
         const finalText = "Opening camera";
         speak(finalText);
-    }    else if (message.includes('Disney+')) {
+    }    else if (message.includes('disney+')) {
         window.open('Disney+:///');
         const finalText = "Opening Disney+";
         speak(finalText);
