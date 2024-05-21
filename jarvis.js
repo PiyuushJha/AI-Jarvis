@@ -39,6 +39,8 @@ function takeCommand(message) {
         speak("Hello Sir, How May I Help You?");
     }else if (message.includes('how are you') ) {
         speak("Hello Sir, I'm good,How May I Help You?");
+    } else if (message.includes('who are you?') ) {
+        speak("I'm jarvis an AI avatar created by piyush jha");
     }  else if (message.includes("open google")) {
         window.open("https://google.com", "_blank");
         speak("Opening Google...");
