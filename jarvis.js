@@ -69,7 +69,7 @@ function takeCommand(message) {
     }
     else if (message.includes('whatsapp')) {
         window.open('whatsapp:///');
-        const finalText = "Opening Calculator";
+        const finalText = "Opening whatsapp";
         speak(finalText);
     }else {
         window.open(`https://www.google.com/search?q=${message.replace(" ", "+")}`, "_blank");
