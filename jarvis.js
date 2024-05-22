@@ -68,7 +68,7 @@ function takeCommand(message) {
         const finalText = "The current time is " + time;
         speak(finalText);
     } else if (message.includes('date')) {
-        const date = new Date().toLocaleString(undefined, { month: "short", day: "numeric" });
+        const date = new Date().toLocaleString(undefined, { month: "short", day: "numeric" , year : "short" });
         const finalText = "Today's date is " + date;
         speak(finalText);
     } else if (message.includes('calculator')) {
@@ -101,7 +101,7 @@ function takeCommand(message) {
         window.open('microsoft.windows.camera:');
         const finalText = "Opening camera";
         speak(finalText);
-    }    else if (message.includes('disney plus')|| (message.includes('hotstar') ) {
+    }    else if (message.includes('disney plus')|| message.includes('hotstar') ) {
         window.open("https://www.hotstar.com/in/home?ref=%2Fin");
         const finalText = "Opening Disney+";
         speak(finalText);
