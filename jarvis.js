@@ -39,7 +39,7 @@ function takeCommand(message) {
         speak("Hello Sir, How May I Help You?");
     }else if (message.includes('how are you') ) {
         speak("Hello Sir, I'm good,How May I Help You?");
-    } else if (message.includes('introduce yourself') ) {
+    } else if (message.includes('introduce yourself') || message.includes('your owner') || message.includes('who created you')) {
         speak("I'm jarvis, personal A I assistant avatar of piyush jha . I'm here to help you in all ways you required. you can ask and command me. Thank you!!");
     } else if (message.includes('do you know me') ) {
         speak("yes, you are piyush and you have created me");
