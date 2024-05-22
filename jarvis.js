@@ -90,15 +90,15 @@ function takeCommand(message) {
         const finalText = "Opening visual studio";
         speak(finalText);
     }    else if (message.includes('photos')) {
-        window.open('Photos:///');
+        window.open('ms-photos:');
         const finalText = "Opening Photos";
         speak(finalText);
     }    else if (message.includes('settings')) {
-        window.open('Settings:///');
+        window.open('ms-settings:');
         const finalText = "Opening Settings";
         speak(finalText);
     }    else if (message.includes('camera')) {
-        window.open('camera:///');
+        window.open('microsoft.windows.camera:');
         const finalText = "Opening camera";
         speak(finalText);
     }    else if (message.includes('disney plus')|| (message.includes('hotstar') ) {
@@ -110,8 +110,8 @@ function takeCommand(message) {
         const finalText = "Opening whatsapp";
         speak(finalText);
     }  else if (message.includes('microsoft store')) {
-        window.open('microsoft store:///');
-        const finalText = "Opening microsoft store";
+        window.open('ms-windows-store:');
+        const finalText = "Opening microsoft store......";
         speak(finalText);
     } else if (message.includes('brave')) {
         window.open('Brave:///');
@@ -122,12 +122,12 @@ function takeCommand(message) {
         const finalText = "Opening gmail";
         speak(finalText);
     }else if (message.includes('map')) {
-        window.open('Maps:///');
+        window.open('https://www.google.com/maps');
         const finalText = "Opening map";
         speak(finalText);
     }else if (message.includes('spotify')) {
         window.open('Spotify:///');
-        const finalText = "Opening spotify";
+        const finalText = "Opening spotify.....";
         speak(finalText);
     }
             
