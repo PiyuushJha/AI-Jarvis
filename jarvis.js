@@ -80,7 +80,10 @@ function takeCommand(message) {
         window.open('whatsapp:///');
         const finalText = "Opening whatsapp";
         speak(finalText);
-    }
+    }else if (message.includes("jio cinema")) {
+        window.open("https://www.jiocinema.com/", "_blank");
+        speak("Opening jio cinema...");
+    } 
         else if (message.includes('instagram')) {
         window.open("https://www.instagram.com/");
         const finalText = "Opening Instagram";
