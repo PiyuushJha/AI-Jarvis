@@ -101,15 +101,36 @@ function takeCommand(message) {
         window.open('camera:///');
         const finalText = "Opening camera";
         speak(finalText);
-    }    else if (message.includes('disney+')) {
-        window.open('Disney+:///');
+    }    else if (message.includes('disney plus')|| (message.includes('hotstar') ) {
+        window.open("https://www.hotstar.com/in/home?ref=%2Fin");
         const finalText = "Opening Disney+";
         speak(finalText);
     }    else if (message.includes('whatsapp')) {
         window.open('whatsapp:///');
         const finalText = "Opening whatsapp";
         speak(finalText);
+    }  else if (message.includes('microsoft store')) {
+        window.open('microsoft store:///');
+        const finalText = "Opening microsoft store";
+        speak(finalText);
+    } else if (message.includes('brave')) {
+        window.open('Brave:///');
+        const finalText = "Opening brave";
+        speak(finalText);
+    }else if (message.includes('gmail')) {
+        window.open("https://mail.google.com/mail/u/0/#inbox");
+        const finalText = "Opening gmail";
+        speak(finalText);
+    }else if (message.includes('map')) {
+        window.open('Maps:///');
+        const finalText = "Opening map";
+        speak(finalText);
+    }else if (message.includes('spotify')) {
+        window.open('Spotify:///');
+        const finalText = "Opening spotify";
+        speak(finalText);
     }
+            
     else {
         window.open(`https://www.google.com/search?q=${message.replace(" ", "+")}`, "_blank");
         const finalText = "I found some information for " + message + " on Google";
