@@ -129,15 +129,15 @@ function takeCommand(message) {
         const finalText = "Opening map";
         speak(finalText);
     }else if (message.includes('file manager') || message.includes('file explorer')) {
-        openApp('file:///C:/');
+        window.open('file:///C:/');
             const finalText = "Opening file manager....";
             speak(finalText);
     }else if (message.includes('microsoft teams') || message.includes('teams app')) {
-        openApp('msteams://');
+       window.open('msteams://');
         const finalText = "Opening Microsoft Teams.";
         speak(finalText);
     }else if (message.includes('zoom')) {
-        openApp('zoommtg://');
+       window.open('zoommtg://');
         const finalText = "Opening Zoom.....";
         speak(finalText);
     } else if (message.includes('spotify')) {
