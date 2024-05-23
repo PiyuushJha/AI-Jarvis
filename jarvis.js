@@ -117,8 +117,8 @@ function takeCommand(message) {
         const finalText = "Opening microsoft store......";
         speak(finalText);
     } else if (message.includes('brave')) {
-        window.open('Brave:///');
-        const finalText = "Opening brave";
+        window.open('brave://');
+        const finalText = "Opening brave.....";
         speak(finalText);
     }else if (message.includes('gmail')) {
         window.open("https://mail.google.com/mail/u/0/#inbox");
@@ -128,7 +128,19 @@ function takeCommand(message) {
         window.open('https://www.google.com/maps');
         const finalText = "Opening map";
         speak(finalText);
-    }else if (message.includes('spotify')) {
+    }else if (message.includes('file manager') || message.includes('file explorer')) {
+        openApp('file:///C:/');
+            const finalText = "Opening file manager....";
+            speak(finalText);
+    }else if (message.includes('microsoft teams') || message.includes('teams app')) {
+        openApp('msteams://');
+        const finalText = "Opening Microsoft Teams.";
+        speak(finalText);
+    }else if (message.includes('zoom')) {
+        openApp('zoommtg://');
+        const finalText = "Opening Zoom.....";
+        speak(finalText);
+    } else if (message.includes('spotify')) {
         window.open('Spotify:///');
         const finalText = "Opening spotify.....";
         speak(finalText);
